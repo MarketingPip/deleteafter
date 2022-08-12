@@ -20,7 +20,7 @@ jobs:
       uses: MarketingPip/delt@main
       with:
         base-url-path: https://THE.URL.TO.YOUR.PAGE/
-        timestamp_format: "dsf"
+        timestamp-format: "dsf"
 
     - name: Output stats
       run: |
