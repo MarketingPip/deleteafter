@@ -17,7 +17,7 @@ jobs:
 
     - name: Generate the sitemap
       id: sitemap
-      uses: marketingpip/generate-sitemap@master
+      uses: MarketingPip/generate-sitemap@main
       with:
         base-url-path: https://THE.URL.TO.YOUR.PAGE/
         timestamp_format: "dsf"
