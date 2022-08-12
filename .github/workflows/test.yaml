@@ -1,29 +1,18 @@
-name: Generate xml sitemap
 
-on:
-  push:
-    branches: [ main ]
+name: OCR PDF Action
+# Define when to run job here
+on: [push, pull_request]
 
 jobs:
-  sitemap_job:
+  example_job:
     runs-on: ubuntu-latest
-    name: Generate a sitemap
-
+    name: Runing OCR PDF Action
     steps:
-    - name: Checkout the repo
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - uses: MarketingPip/generate-sitemap@main
       with:
-        fetch-depth: 0 
+        # Define the folder or file to download
+        input_file: .github/example_pdfs/Non-text-searchable.pdf
+        output_file: .github/example_pdfs/output_searchable.pdf
+        
 
-    - name: Generate the sitemap
-      id: sitemap
-      uses: MarketingPip/generate-sitemap@master
-      with:
-        base-url-path: https://THE.URL.TO.YOUR.PAGE/
-        timestamp_format: "dsf"
-
-    - name: Output stats
-      run: |
-        echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
-        echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
-        echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
