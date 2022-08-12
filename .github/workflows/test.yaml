@@ -9,7 +9,7 @@ jobs:
     name: Runing OCR PDF Action
     steps:
     - uses: actions/checkout@v2
-    - uses: MarketingPip/generate-sitemap@v1
+    - uses: MarketingPip/delt@main
       with:
         # Define the folder or file to download
         input_file: .github/example_pdfs/Non-text-searchable.pdf
