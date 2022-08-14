@@ -20,7 +20,7 @@ jobs:
       uses: MarketingPip/delt@main
       with:
         base-url-path: https://THE.URL.TO.YOUR.PAGE/
-        timestamp-format: 'Last modified %d, %b %Y'
+  #      timestamp-format: 'Last modified %d, %b %Y'
 
     - name: Output stats
       run: |
