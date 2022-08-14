@@ -1,5 +1,5 @@
 name: Generate xml sitemap
-
+#
 on:
   push:
     branches: [ main ]
