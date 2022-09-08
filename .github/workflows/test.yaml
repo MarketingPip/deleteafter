@@ -22,6 +22,7 @@ jobs:
       uses: DynamicImages/sitemap-4@master
       with:
         base-url-path: https://THE.URL.TO.YOUR.PAGE/
+        date-only: false
 
     - name: Output stats
       run: |
