@@ -19,7 +19,7 @@ jobs:
 
     - name: Generate the sitemap
       id: sitemap
-      uses: MarketingPip/delt@main
+      uses: DynamicImages/sitemap@master
       with:
         base-url-path: https://THE.URL.TO.YOUR.PAGE/
 
