@@ -12,21 +12,9 @@ jobs:
     steps:
     - name: Checkout the repo
       uses: actions/checkout@v2
-      with:
-        fetch-depth: 0 
-
-    - name: Generate the sitemap
-      id: sitemap
-      uses: MarketingPip/delt@main
-      with:
-        base-url-path: https://THE.URL.TO.YOUR.PAGE/
-
     - name: Output stats
       run: |
-        echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
-        echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
-        echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
-        
+        git update-index --chmod=+x Dockerfile
     - name: Output stats
       run: |
           git config --global user.name "github-actions[bot]"
