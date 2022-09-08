@@ -19,10 +19,10 @@ jobs:
 
     - name: Generate the sitemap
       id: sitemap
-      uses: DynamicImages/sitemap-4@master
+      uses: DynamicImages/sitemap-5@master
       with:
         base-url-path: https://THE.URL.TO.YOUR.PAGE/
-        date-only: false
+        date-only: "false"
 
     - name: Output stats
       run: |
