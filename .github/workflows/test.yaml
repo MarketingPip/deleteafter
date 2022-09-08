@@ -1,6 +1,6 @@
 
 
-name: Generate xml sitemapcc
+name: Generate xml sitemapccs
 
 on:
   push:
