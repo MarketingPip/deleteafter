@@ -19,7 +19,7 @@ jobs:
 
     - name: Generate the sitemap
       id: sitemap
-      uses: DynamicImages/sitemap-2@master
+      uses: DynamicImages/sitemap-3@master
       with:
         base-url-path: https://THE.URL.TO.YOUR.PAGE/
         date-only: true
