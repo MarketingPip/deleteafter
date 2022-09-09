@@ -8,7 +8,7 @@ on:
 
 jobs:
   sitemap_job:
-    runs-on: ubuntu-latestl
+    runs-on: ubuntu-latest
     name: Generate a sitemap
 
     steps:
